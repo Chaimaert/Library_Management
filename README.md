@@ -28,7 +28,7 @@ This section will be accessible to members, offering them the following features
 • Asynchronous email sending
 • Log files
 
-***************************************** Conception **********************************************************
+********************************************************** Conception **********************************************************
 
 --> Use case diagram : 
 • This diagram represents the various actions that a member or user can perform within the web version (Front-office) of the library management system. 
