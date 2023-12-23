@@ -27,3 +27,9 @@ This section will be accessible to members, offering them the following features
 • Search, filter, sorting, and pagination in lists
 • Asynchronous email sending
 • Log files
+
+***************************************** Conception **********************************************************
+
+--> Use case diagram : 
+• This diagram represents the various actions that a member or user can perform within the web version (Front-office) of the library management system. 
+• Use_cas_diagram(web).png : represents the use case diagram of the web version 
