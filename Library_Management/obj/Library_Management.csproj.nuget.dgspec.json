@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\projects\\library_management\\Library_Management\\Library_Management.csproj": {}
+    "D:\\projects\\library_management\\library_management\\Library_Management.csproj": {}
   },
   "projects": {
-    "D:\\projects\\library_management\\Library_Management\\Library_Management.csproj": {
+    "D:\\projects\\library_management\\library_management\\Library_Management.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\library_management\\Library_Management\\Library_Management.csproj",
+        "projectUniqueName": "D:\\projects\\library_management\\library_management\\Library_Management.csproj",
         "projectName": "Library_Management",
-        "projectPath": "D:\\projects\\library_management\\Library_Management\\Library_Management.csproj",
+        "projectPath": "D:\\projects\\library_management\\library_management\\Library_Management.csproj",
         "packagesPath": "C:\\Users\\chwimu rt\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\library_management\\Library_Management\\obj\\",
+        "outputPath": "D:\\projects\\library_management\\library_management\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
