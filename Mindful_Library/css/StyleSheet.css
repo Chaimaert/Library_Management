@@ -14,3 +14,41 @@
 #footer2 {
     background: #dda15e;
 }
+
+.mindful {
+    color: #bc6c25;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin-top:1px;
+}
+.color:hover {
+    color: #bc6c25;
+}
+
+.title {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 180;
+    color: chocolate;
+    opacity: revert-layer;
+}
+
+.features {
+    margin-bottom: 25px;
+    font-style: italic;
+}
+    .features:hover {
+        color: #da7e37;
+    }
+   .feautres-title {
+       font-family:Bahnschrift;
+   }
+
+.dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #000;
+    margin-right: 5px;
+}
