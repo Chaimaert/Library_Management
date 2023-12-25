@@ -1,5 +1,4 @@
 ﻿.footerlinks {
-    color: #ffffff;
     text-decoration: none !important;
 }
 
@@ -52,3 +51,18 @@
     background-color: #000;
     margin-right: 5px;
 }
+
+.card {
+    margin-top: 50px;
+}
+
+.form-group {
+    text-align: center;
+}
+
+    .form-group input[type="text"],
+    .form-group input[type="password"],
+    .btn-login,
+    .btn-signup {
+        margin-bottom: 10px;
+    }
