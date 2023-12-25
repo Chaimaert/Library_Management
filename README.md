@@ -4,6 +4,7 @@ The objective of this project is to create an application that allows library me
 This project contains two versions, the desktop version and the web version.
 
 ---> Back-office Section (CRUD):
+
 This section will be reserved for administrators and will offer the following functionalities:
 • Employee/User Management
 • Member Management
@@ -12,6 +13,7 @@ This section will be reserved for administrators and will offer the following fu
 • Import and export of members (Excel, CSV)
 
 ---> Front-office Section:
+
 This section will be accessible to members, offering them the following features:
 • Membership registration
 • Booking (Borrowing) with email confirmation
@@ -19,6 +21,7 @@ This section will be accessible to members, offering them the following features
 • ...
 
 ---> Technical Specifications:
+
 • Database: SQLServer
 • Entity Framework for data access layer
 • WPF for the Back-office (Desktop)
@@ -28,8 +31,9 @@ This section will be accessible to members, offering them the following features
 • Asynchronous email sending
 • Log files
 
-********************************************************** Conception **********************************************************
+********************************************* Conception *********************************************
 
 --> Use case diagram : 
+
 • This diagram represents the various actions that a member or user can perform within the web version (Front-office) of the library management system. 
 • Use_cas_diagram(web).png : represents the use case diagram of the web version 
