@@ -87,17 +87,17 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                         <p>
-                            <asp:LinkButton class="footerlinks" ID="LinkButton6" runat="server">Admin Login</asp:LinkButton>
+                            <asp:LinkButton style="color:black" class="footerlinks" ID="LinkButton6" runat="server">Admin Login</asp:LinkButton>
                             &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LinkButton11" runat="server">Author Management</asp:LinkButton>
+                            <asp:LinkButton style="color:black" class="footerlinks" ID="LinkButton11" runat="server">Author Management</asp:LinkButton>
                             &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LinkButton12" runat="server">Publisher Management</asp:LinkButton>
+                            <asp:LinkButton style="color:black" class="footerlinks" ID="LinkButton12" runat="server">Publisher Management</asp:LinkButton>
                             &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LinkButton8" runat="server">Book Inventory</asp:LinkButton>
+                            <asp:LinkButton style="color:black" class="footerlinks" ID="LinkButton8" runat="server">Book Inventory</asp:LinkButton>
                             &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LinkButton9" runat="server">Book Issuing</asp:LinkButton>
+                            <asp:LinkButton style="color:black" class="footerlinks" ID="LinkButton9" runat="server">Book Issuing</asp:LinkButton>
                             &nbsp;
-                             <asp:LinkButton class="footerlinks" ID="LinkButton10" runat="server">Member Management</asp:LinkButton>
+                             <asp:LinkButton style="color:black" class="footerlinks" ID="LinkButton10" runat="server">Member Management</asp:LinkButton>
                         </p>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
             <div id="footer2" class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                        <p style="color:whitesmoke">&copy All right Reserved 2023 </p>
+                        <p style="color:black">&copy All right Reserved 2023 </p>
                     </div>
                 </div>
             </div>

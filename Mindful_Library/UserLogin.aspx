@@ -4,16 +4,13 @@
         body {
             background-color: #f8f9fa;
         }
-        .text {
-            font-weight:700;
-        }
         .card-login {
             max-width: 400px;
             margin: 100px auto;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
         .card-login .card-header {
-            background-color: #dda15e
+            background-color: #e7bc91;
 ;           font-family:'Times New Roman', Times, serif;
             font-style:revert-layer;
             color: black;
@@ -25,16 +22,19 @@
             padding: 20px;
         }
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            display: block;
+            text-align: left;
+            font-weight: bold;
         }
         .btn-login {
-            background-color: #dda15e;
+            background-color: #e7bc91;
             border: none;
             display: block;
             margin: 0 auto;
         }
         .btn-login:hover {
-            background-color: #0056b3;
+            background-color: #dda15e;
         }
         .signup-text {
             text-align: center;
@@ -62,12 +62,12 @@
                </div>
                <div class="card-body">
                   <div class="form-group">
-                     <label class="text" for="TextBox1">User ID</label>
-                     <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="User ID"></asp:TextBox>
+                     <label for="TextBox1">User ID</label>
+                     <asp:TextBox style="margin-top:10px" CssClass="form-control" ID="TextBox1" runat="server" placeholder="User ID"></asp:TextBox>
                   </div>
                   <div class="form-group">
-                     <label class="text" for="TextBox2">Password</label>
-                     <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
+                     <label for="TextBox2">Password</label>
+                     <asp:TextBox style="margin-top:10px" CssClass="form-control" ID="TextBox2" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
                   </div>
                   <div class="form-group">
                      <asp:Button class="btn btn-lg btn-block btn-login" ID="Button1" runat="server" Text="Login" />
