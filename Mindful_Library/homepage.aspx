@@ -6,7 +6,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
      <section>
-         <img src="images/library2.jpg" class="img-fluid" style="width: 100%; height: 350px; object-fit: cover;" />
+         <img src="images/library2.jpg" class="img-fluid" style="width: 100%; height: 250px; object-fit: cover;" />
          <div>
             <h2 class="title" style="text-align: center;margin-top: 10px;margin-bottom: 20px;">Welcome to Mindful Library</h2>
         </div>
