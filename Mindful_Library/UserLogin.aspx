@@ -73,11 +73,10 @@
                      <asp:Button class="btn btn-lg btn-block btn-login" ID="Button1" runat="server" Text="Login" />
                   </div>
                   <div class="signup-text">
-                     Don't have an account? <a href="usersignup.aspx" class="signup-link">Sign Up</a>
+                     Don't have an account? <a href="UserSignup.aspx" class="signup-link">Sign Up</a>
                   </div>
                </div>
             </div>
-
          </div>
       </div>
    </div>
