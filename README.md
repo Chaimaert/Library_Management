@@ -18,7 +18,6 @@ This section will be accessible to members, offering them the following features
 • Membership registration
 • Booking (Borrowing) with email confirmation
 • PDF editing of the reservation slip
-• ...
 
 ---> Technical Specifications:
 
