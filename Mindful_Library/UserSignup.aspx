@@ -58,7 +58,7 @@
             <div class="col-md-6 mx-auto">
                 <div class="card card-login">
                     <div class="card-header">
-                        <h3>User Signup</h3>
+                        <h3>Sign Up</h3>
                     </div>
                     <div class="card-body">
                         <div class="form-group">

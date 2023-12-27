@@ -43,9 +43,7 @@
                         <li class=" nav-item active">
                             <a class="nav-link color" href="#">About Us</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link color" href="#">Terms</a>
-                        </li>
+
                         <li class="nav-item active">
                             <asp:LinkButton class="nav-link color" ID="LinkButton4" runat="server">Books</asp:LinkButton>
                         </li>
@@ -55,17 +53,17 @@
                     <ul class="navbar-nav" style="margin-left: auto;">
                         
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link color" ID="LinkButton1" runat="server">User Login</asp:LinkButton>
+                            <asp:LinkButton class="nav-link color" ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Login</asp:LinkButton>
                         </li>
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link color" ID="LinkButton2" runat="server">Sign Up</asp:LinkButton>
+                            <asp:LinkButton class="nav-link color" ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Sign Up</asp:LinkButton>
                         </li>
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link color" ID="LinkButton3" runat="server">Logout</asp:LinkButton>
+                            <asp:LinkButton class="nav-link color" ID="LinkButton3" runat="server" Visible="false">Logout</asp:LinkButton>
                         </li>
 
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link color" ID="LinkButton7" runat="server">Hello user</asp:LinkButton>
+                            <asp:LinkButton class="nav-link color" ID="LinkButton7" runat="server" Visible="false">Hello user</asp:LinkButton>
 
                         </li>
                     </ul>
@@ -83,27 +81,10 @@
         <!-- Main Content Placeholder -->
 
        <footer>
-            <div id="footer1" class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                        <p>
-                            <asp:LinkButton style="color:black" class="footerlinks" ID="LinkButton11" runat="server">Author Management</asp:LinkButton>
-                            &nbsp;
-                            <asp:LinkButton style="color:black" class="footerlinks" ID="LinkButton12" runat="server">Publisher Management</asp:LinkButton>
-                            &nbsp;
-                            <asp:LinkButton style="color:black" class="footerlinks" ID="LinkButton8" runat="server">Book Inventory</asp:LinkButton>
-                            &nbsp;
-                            <asp:LinkButton style="color:black" class="footerlinks" ID="LinkButton9" runat="server">Book Issuing</asp:LinkButton>
-                            &nbsp;
-                             <asp:LinkButton style="color:black" class="footerlinks" ID="LinkButton10" runat="server">Member Management</asp:LinkButton>
-                        </p>
-                    </div>
-                </div>
-            </div>
             <div id="footer2" class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                        <p style="color:black">&copy All right Reserved 2023 </p>
+                        <p style="color:black; margin-top:15px;">&copy All right Reserved 2023 </p>
                     </div>
                 </div>
             </div>
