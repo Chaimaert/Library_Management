@@ -47,7 +47,7 @@
                             <a class="nav-link color" href="#">Terms</a>
                         </li>
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link color" ID="LinkButton4" runat="server">View Books</asp:LinkButton>
+                            <asp:LinkButton class="nav-link color" ID="LinkButton4" runat="server">Books</asp:LinkButton>
                         </li>
 
                     </ul>
