@@ -87,8 +87,6 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                         <p>
-                            <asp:LinkButton style="color:black" class="footerlinks" ID="LinkButton6" runat="server">Admin Login</asp:LinkButton>
-                            &nbsp;
                             <asp:LinkButton style="color:black" class="footerlinks" ID="LinkButton11" runat="server">Author Management</asp:LinkButton>
                             &nbsp;
                             <asp:LinkButton style="color:black" class="footerlinks" ID="LinkButton12" runat="server">Publisher Management</asp:LinkButton>
