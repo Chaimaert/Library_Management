@@ -12,7 +12,7 @@
         }
         .card-login .card-header {
             background-color: #e7bc91;
-;           font-family:'Times New Roman', Times, serif;
+            font-family:'Times New Roman', Times, serif;
             font-style:revert-layer;
             color: black;
             text-align: center;
@@ -63,24 +63,28 @@
                     <div class="card-body">
                         <div class="form-group">
                             <label for="txtName">Name</label>
-                            <asp:TextBox style="margin-top:10px" CssClass="form-control" ID="txtName" runat="server" placeholder="Name"></asp:TextBox>
+                            <asp:TextBox style="margin-top:8px" CssClass="form-control" ID="txtName" runat="server" placeholder="Name"></asp:TextBox>
                         </div>
                         <div class="form-group">
                             <label for="txtEmail">Email</label>
-                            <asp:TextBox style="margin-top:10px" CssClass="form-control" ID="txtEmail" runat="server" placeholder="Email"></asp:TextBox>
+                            <asp:TextBox style="margin-top:8px" CssClass="form-control" ID="txtEmail" runat="server" placeholder="Email"></asp:TextBox>
                         </div>
                         <div class="form-group">
-                            <label for="txtUserID">User ID</label>
-                            <asp:TextBox style="margin-top:10px" CssClass="form-control" ID="txtUserID" runat="server" placeholder="User ID"></asp:TextBox>
+                            <label for="txtUserID">Username</label>
+                            <asp:TextBox style="margin-top:8px" CssClass="form-control" ID="txtUserID" runat="server" placeholder="Username"></asp:TextBox>
                         </div>
                         <div class="form-group">
                             <label for="txtPassword">Password</label>
-                            <asp:TextBox style="margin-top:10px" CssClass="form-control" ID="txtPassword" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
+                            <asp:TextBox style="margin-top:8px" CssClass="form-control" ID="txtPassword" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtPassword">Verify Password</label>
+                            <asp:TextBox style="margin-top:8px" CssClass="form-control" ID="TextBox1" runat="server" placeholder="Verify Password" TextMode="Password"></asp:TextBox>
                         </div>
 
 
                         <div class="form-group">
-                            <asp:Button class="btn btn-lg btn-block btn-login" ID="Button1" runat="server" Text="Sign Up" />
+                            <asp:Button class="btn btn-lg btn-block btn-login" ID="Button1" runat="server" Text="Sign Up" OnClick="Button1_Click" />
                         </div>
                         <div class="signup-text">
                             Already have an account? <a href="UserLogin.aspx" class="signup-link">Log In</a>
