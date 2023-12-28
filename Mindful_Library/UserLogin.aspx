@@ -11,7 +11,7 @@
         }
         .card-login .card-header {
             background-color: #e7bc91;
-;           font-family:'Times New Roman', Times, serif;
+            font-family:'Times New Roman', Times, serif;
             font-style:revert-layer;
             color: black;
             text-align: center;

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -18,14 +19,65 @@ namespace Mindful_Library
 
         }
 
+        //SignUp button
         protected void Button1_Click(object sender, EventArgs e)
+        {
+            if (checkMember())
+            {
+                Response.Write("<script>alert('Member Already Exist, try another username');</script>");
+            }
+            else
+            {
+                if (txtPassword.Text.Trim() != TextBox1.Text.Trim())
+                {
+                    Response.Write("<script>alert('Password do not match, try again');</script>");
+                }
+                else
+                {
+                    SignupNewUser();
+                }
+            }
+        }
+
+
+        // user defined method
+        bool checkMember()
         {
             try
             {
                 SqlConnection con = new SqlConnection(strcon);
-                if (con.State == System.Data.ConnectionState.Closed) 
+                if (con.State == ConnectionState.Closed)
                 {
-                    con.Open(); 
+                    con.Open();
+                }
+                SqlCommand cmd = new SqlCommand("SELECT * from user_signup where username='" + txtUserID.Text.Trim() + "';", con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                if (dt.Rows.Count >= 1)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('" + ex.Message + "');</script>");
+                return false;
+            }
+        }
+
+        void SignupNewUser()
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(strcon);
+                if (con.State == System.Data.ConnectionState.Closed)
+                {
+                    con.Open();
                 }
 
                 SqlCommand cmd = new SqlCommand("INSERT INTO user_signup(name,username,email,password) values(@name,@username,@email,@password)",
