@@ -23,56 +23,33 @@ namespace Mindful_Library
         {
             try
             {
-                string username = TextBox1.Text.Trim();
-                string password = TextBox2.Text.Trim();
-
-                // Log the values received from the form
-                Response.Write("<script>alert('Username: " + username + " | Password: " + password + "');</script>");
-
-                using (SqlConnection con = new SqlConnection(strcon))
+                SqlConnection con = new SqlConnection(strcon);
+                if(con.State == ConnectionState.Closed)
                 {
                     con.Open();
-                    string query = "SELECT [username], [password] FROM user_login WHERE username = @username AND password = @password";
-
-                    using (SqlCommand cmd = new SqlCommand(query, con))
+                }
+                SqlCommand cmd = new SqlCommand("select * from user_login where username='" + TextBox1.Text.Trim() + "' AND password='" + TextBox2.Text.Trim() + "'", con);
+                SqlDataReader dr = cmd.ExecuteReader();
+                if(dr.HasRows)
+                {
+                    while(dr.Read())
                     {
-                        cmd.Parameters.AddWithValue("@username", username);
-                        cmd.Parameters.AddWithValue("@password", password);
-
-                        // Log the SQL query being executed
-                        Response.Write("<script>alert('Query: " + cmd.CommandText + "');</script>");
-
-                        SqlDataReader dr = cmd.ExecuteReader();
-
-                        // Log the number of rows retrieved
-                        if (dr.HasRows)
-                        {
-                            int count = 0;
-                            while (dr.Read())
-                            {
-                                count++;
-                            }
-                        }
-                        else
-                        {
-                            Response.Write("<script>alert('No rows retrieved');</script>");
-                        }
+                        Response.Write("<script>alert('" + dr.GetValue(0) + "');</script>");
                     }
                 }
+                else
+                {
+                    Response.Write("<script>alert('Invalid properties');</script>");
+                }
+
             }
-            catch (SqlException ex)
+            catch (Exception ex) 
             {
-                Response.Write("<script>alert('SQL Error: " + ex.Message + "');</script>");
+
             }
-            catch (Exception ex)
-            {
-                Response.Write("<script>alert('Error: " + ex.Message + "');</script>");
-            }
+
+
+           // Response.Write("<script>alert('Button clicked');</script>");
         }
-
-
-
-
-
     }
 }
