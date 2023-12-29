@@ -62,15 +62,15 @@
                </div>
                <div class="card-body">
                   <div class="form-group">
-                     <label for="TextBox1">User ID</label>
-                     <asp:TextBox style="margin-top:10px" CssClass="form-control" ID="TextBox1" runat="server" placeholder="User ID"></asp:TextBox>
+                     <label for="TextBox1">Username</label>
+                     <asp:TextBox style="margin-top:10px" CssClass="form-control" ID="TextBox1" runat="server" placeholder="Username"></asp:TextBox>
                   </div>
                   <div class="form-group">
                      <label for="TextBox2">Password</label>
                      <asp:TextBox style="margin-top:10px" CssClass="form-control" ID="TextBox2" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
                   </div>
                   <div class="form-group">
-                     <asp:Button class="btn btn-lg btn-block btn-login" ID="Button1" runat="server" Text="Login" />
+                      <asp:Button class="btn btn-lg btn-block btn-login" ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" />
                   </div>
                   <div class="signup-text">
                      Don't have an account? <a href="UserSignup.aspx" class="signup-link">Sign Up</a>
