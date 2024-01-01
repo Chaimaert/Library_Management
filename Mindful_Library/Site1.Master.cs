@@ -28,7 +28,7 @@ namespace Mindful_Library
 
                     LinkButton3.Visible = true; //logout
                     LinkButton7.Visible = true; //hello_user
-                    LinkButton7.Text = "Hello" + Session["username"].ToString();
+                    LinkButton7.Text = "Hello " + Session["username"].ToString();
                 }
 
             }
