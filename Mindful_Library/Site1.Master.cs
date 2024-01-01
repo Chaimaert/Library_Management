@@ -38,19 +38,29 @@ namespace Mindful_Library
             }
         }
 
+        //Login
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
             Response.Redirect("UserLogin.aspx");
         }
 
+        //Sign Up
         protected void LinkButton2_Click(object sender, EventArgs e)
         {
             Response.Redirect("UserSignup.aspx");
         }
 
-        protected void LinkButton3_Click(object sender, EventArgs e)
+        //Logout
+        protected void LinkButton3_Click1(object sender, EventArgs e)
         {
+            Session["username"] = "";
+            Session["role"] = "";
 
+            LinkButton1.Visible = true; //login
+            LinkButton2.Visible = true; //signup
+
+            LinkButton3.Visible = false; //logout
+            LinkButton7.Visible = false; //hello_user
         }
     }
 }
