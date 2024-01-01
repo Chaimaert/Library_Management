@@ -50,6 +50,12 @@ namespace Mindful_Library
             Response.Redirect("UserSignup.aspx");
         }
 
+        // View Books 
+        protected void LinkButton4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Books.aspx");
+        }
+
         //Logout
         protected void LinkButton3_Click1(object sender, EventArgs e)
         {
@@ -61,6 +67,10 @@ namespace Mindful_Library
 
             LinkButton3.Visible = false; //logout
             LinkButton7.Visible = false; //hello_user
+
+            Response.Redirect("homepage.aspx");
         }
+
+
     }
 }
