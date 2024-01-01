@@ -36,6 +36,7 @@ namespace Mindful_Library
                     {
                         Response.Write("<script>alert('Login Successful');</script>");
                         Session["username"] = dr.GetValue(0).ToString();
+                        Session["role"] = "user";
                     }
                     Response.Redirect("homepage.aspx");
                 }

@@ -11,7 +11,30 @@ namespace Mindful_Library
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            try
+            {
+                if (Session["role"].Equals(""))
+                {
+                    LinkButton1.Visible = true; //login
+                    LinkButton2.Visible = true; //signup
+
+                    LinkButton3.Visible = false; //logout
+                    LinkButton7.Visible = false; //hello_user
+                }
+                else if (Session["role"].Equals("user"))
+                {
+                    LinkButton1.Visible = false; //login
+                    LinkButton2.Visible = false; //signup
+
+                    LinkButton3.Visible = true; //logout
+                    LinkButton7.Visible = true; //hello_user
+                }
+
+            }
+            catch 
+            {
+
+            }
         }
 
         protected void LinkButton1_Click(object sender, EventArgs e)
