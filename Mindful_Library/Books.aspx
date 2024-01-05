@@ -35,7 +35,7 @@
                                     <div class="col">
                                         <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Book_id" DataSourceID="SqlDataSource1">
                                             <Columns>
-                                                <asp:BoundField DataField="book_id" HeaderText="ID" ReadOnly="True" SortExpression="book_id">
+                                                <asp:BoundField DataField="book_id" ReadOnly="True" SortExpression="book_id">
                                                     <ControlStyle Font-Bold="True" />
                                                     <ItemStyle Font-Bold="True" />
                                                 </asp:BoundField>
@@ -70,7 +70,6 @@
                                                                             <asp:Label ID="Label10" runat="server" Font-Bold="True" Text='<%# Eval("[Price]") %>'></asp:Label>
                                                                              <br />
                                                                             <span class="title">Availability - </span> 
-                                                                              
                                                                             <asp:Label ID="Label12" runat="server" Font-Bold="True" Text='<%# Eval("[Disponibilty]") %>'></asp:Label>
                                                                         </div>
                                                                     </div>
