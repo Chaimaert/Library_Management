@@ -13,7 +13,9 @@
     <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="Bootstrap/js/popper.min.js"></script>
     <script src="Bootstrap/js/bootstrap.min.js"></script>
-    
+
+    <script src="datatables/js/jquery.dataTables.min.js"></script>
+
     <link href="css/StyleSheet.css" rel="stylesheet" />
 
     <asp:ContentPlaceHolder ID="head" runat="server">

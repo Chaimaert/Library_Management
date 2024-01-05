@@ -2,18 +2,25 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $(".table").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
-            });
-        </script>
+<!-- jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- DataTables library -->
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".table").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
+    });
+</script>
+
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div class="container">
+     <div class="margin-top:10px, container ">
             <div class="row">
 
-                <div class="col-sm-12">
+                <div class="margin-top:10px, col-sm-12">
                     <center>
                         <h3 class="title">
                         Books List</h3>
