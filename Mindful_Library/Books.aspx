@@ -51,23 +51,26 @@
                                                                     </div>
                                                                     <div class="row">
                                                                         <div class="col-12">
-                                                                            <span>Author - </span>
+                                                                            <span class="title">Author - </span>
                                                                             <asp:Label ID="Label3" runat="server" Font-Bold="True" Text='<%# Eval("Author_Name") %>'></asp:Label>
-                                                                            &nbsp;| <span><span>&nbsp;</span>Genre - </span>
+                                                                             <br />
+                                                                             <span class="title">Genre - </span>
                                                                             <asp:Label ID="Label4" runat="server" Font-Bold="True" Text='<%# Eval("Book_Type") %>'></asp:Label>
                                                                         </div>
                                                                     </div>
                                                                     <div class="row">
-                                                                        <div class="col-12">                                          
-                                                                            &nbsp;| Pages -
+                                                                        <div class="col-12">  
+                                                                            <span class="title">Pages - </span>                                                 
                                                                             <asp:Label ID="Label8" runat="server" Font-Bold="True" Text='<%# Eval("Pages_Nbr") %>'></asp:Label>
                                                                         </div>
                                                                     </div>
                                                                     <div class="row">
                                                                         <div class="col-12">
-                                                                            Cost -
+                                                                            <span class="title">Cost - </span> 
                                                                             <asp:Label ID="Label10" runat="server" Font-Bold="True" Text='<%# Eval("[Price]") %>'></asp:Label>
-                                                                            &nbsp;| Availability -
+                                                                             <br />
+                                                                            <span class="title">Availability - </span> 
+                                                                              
                                                                             <asp:Label ID="Label12" runat="server" Font-Bold="True" Text='<%# Eval("[Disponibilty]") %>'></asp:Label>
                                                                         </div>
                                                                     </div>
