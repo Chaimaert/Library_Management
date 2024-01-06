@@ -9,11 +9,11 @@
 <!-- DataTables library -->
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 
-<script type="text/javascript">
-    $(document).ready(function () {
-        $(".table").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
-    });
-</script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".table").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
+            });
+        </script>
 
 </asp:Content>
 
@@ -39,7 +39,7 @@
                             <div class="card-body">
 
                                 <div class="row">
-                                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Mindful_libraryConnectionString %>" SelectCommand="SELECT * FROM [book]"></asp:SqlDataSource>
+                                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Mindful_libraryConnectionString %>" SelectCommand="SELECT * FROM [Books]"></asp:SqlDataSource>
                                     <div class="col">
                                         <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Book_id" DataSourceID="SqlDataSource1">
                                             <Columns>
