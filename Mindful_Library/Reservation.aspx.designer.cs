@@ -11,7 +11,7 @@ namespace Mindful_Library
 {
 
 
-    public partial class WebForm1
+    public partial class Reservation
     {
     }
 }

@@ -43,7 +43,7 @@
                             <a class="nav-link color" href="homepage.aspx">Home</a>
                         </li>
                         <li class=" nav-item active">
-                            <a class="nav-link color" href="#">About Us</a>
+                            <a class="nav-link color" href="Reservation.aspx">Reservation</a>
                         </li>
 
                         <li class="nav-item active">
