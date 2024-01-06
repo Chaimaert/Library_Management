@@ -24,7 +24,7 @@ This section will be accessible to members, offering them the following features
 • Database: SQLServer
 • Entity Framework for data access layer
 • WPF for the Back-office (Desktop)
-• ASP.Net Core MVC for the Front-office (Web)
+• ASP.Net for the Front-office (Web)
 • Authentication
 • Search, filter, sorting, and pagination in lists
 • Asynchronous email sending
