@@ -1,0 +1,80 @@
+﻿<Window x:Class="Library.MemberManagement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Member Management" Height="690" Width="1029" WindowStartupLocation="CenterScreen">
+    <Grid Background="White" RenderTransformOrigin="0.46,0.492">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="239*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Background="#FFA96042" Padding="10" VerticalAlignment="Center" Height="57" Grid.ColumnSpan="2">
+            <TextBlock Text="Member Management" Foreground="White" FontFamily="Brush Script MT" Margin="390,0,14,0" FontSize="30"/>
+        </Border>
+
+        <!-- Member Input Form -->
+        <Border Grid.Row="1" Margin="10,10,10,10" BorderBrush="Gray" BorderThickness="1" Padding="10" RenderTransformOrigin="0.386,0.517" Background="#FFEDC297" Grid.ColumnSpan="2">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Member Details Form -->
+                <StackPanel Grid.Column="0">
+                    <TextBlock Text="--------Member Details---------" FontFamily="Brush Script MT" FontSize="26" Margin="0,0,0,10"/>
+
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,0">
+                        <TextBlock Text="First Name:" FontSize="16" FontWeight="Bold" Margin="2,20,5,10"/>
+                        <TextBox x:Name="txtFirstName" Width="221" Height="28"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,0">
+                        <TextBlock Text="Last Name:" FontSize="16" FontWeight="Bold" Margin="2,20,5,10"/>
+                        <TextBox x:Name="txtLastName" Width="220" Height="26"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,50">
+                        <TextBlock Text="Registration Date:" FontSize="16" FontWeight="Bold" Margin="2,30,5,15"/>
+                        <DatePicker x:Name="dpRegistrationDate" Width="179" Height="36"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Add" Width="75" Margin="20,0,10,0" Click="AddMember_Click" FontWeight="Bold" Foreground="White" Background="#FFA96042" />
+                        <Button Content="Update" Width="80" Margin="10,0,10,0" Click="UpdateMember_Click" FontWeight="Bold" Foreground="White" Background="#FFA96042"/>
+                        <Button Content="Delete" Width="75" Margin="10,0,10,0" Click="DeleteMember_Click" FontWeight="Bold" Foreground="White" Background="#FFA96042"/>
+                    </StackPanel>
+                    
+
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Home" Width="75" Margin="80,30,10,0" Click="HomeMember_Click" FontWeight="Bold" Foreground="White" Background="#FFA96042" />
+                        <Button Content="Clear" Width="75" Margin="15,30,10,0" Click="ClearMember_Click" FontWeight="Bold" Foreground="White" Background="#FFA96042" />
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Export Members" Width="150" Margin="5,30,10,0" Click="ExportMembers_Click" FontWeight="Bold" Foreground="White" Background="#FFF36F12" />
+                        <Button Content="Import Members" Width="150" Margin="5,30,10,0" Click="ImportMembers_Click" FontWeight="Bold" Foreground="White" Background="#FFF36F12" />
+                    </StackPanel>
+                </StackPanel>
+
+                
+
+                <!-- Member List -->
+                <DataGrid x:Name="dgMembers" AutoGenerateColumns="False" Margin="337,0,0,0" RenderTransformOrigin="-0.005,0.492" SelectionMode="Extended" SelectionUnit="FullRow" SelectionChanged="dgMembers_SelectionChanged">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="M.ID" Binding="{Binding Member_Id}" Width="70"/>
+                        <DataGridTextColumn Header="First Name" Binding="{Binding MFirst_Name}" Width="150"/>
+                        <DataGridTextColumn Header="Last Name" Binding="{Binding MLast_Name}" Width="150"/>
+                        <DataGridTextColumn Header="Registration Date" Binding="{Binding Registration_Date}" Width="150"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
