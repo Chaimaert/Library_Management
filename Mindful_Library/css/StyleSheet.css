@@ -66,3 +66,10 @@
     .btn-signup {
         margin-bottom: 10px;
     }
+
+.Reserve {
+    background-color: #e7bc91 !important;
+    border: none !important;
+    display: block !important;
+    margin: 0 auto !important;
+}

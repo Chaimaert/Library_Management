@@ -14,8 +14,6 @@
     <script src="Bootstrap/js/popper.min.js"></script>
     <script src="Bootstrap/js/bootstrap.min.js"></script>
 
-    <script src="datatables/js/jquery.dataTables.min.js"></script>
-
     <link href="css/StyleSheet.css" rel="stylesheet" />
 
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -42,8 +40,8 @@
                         <li class="nav-item active">
                             <a class="nav-link color" href="homepage.aspx">Home</a>
                         </li>
-                        <li class=" nav-item active">
-                            <a class="nav-link color" href="Reservation.aspx">Reservation</a>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link color" ID="LinkButton5" runat="server" OnClick="LinkButton5_Click">Reservation</asp:LinkButton>
                         </li>
 
                         <li class="nav-item active">

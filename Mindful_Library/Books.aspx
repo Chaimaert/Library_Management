@@ -41,7 +41,7 @@
                                 <div class="row">
                                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Mindful_libraryConnectionString %>" SelectCommand="SELECT * FROM [Books]"></asp:SqlDataSource>
                                     <div class="col">
-                                        <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Book_id" DataSourceID="SqlDataSource1">
+                                        <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Book_id" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
                                             <Columns>
                                                 <asp:BoundField DataField="book_id" ReadOnly="True" SortExpression="book_id">
                                                     <ControlStyle Font-Bold="True" />
@@ -87,6 +87,11 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                         <!-- Reserve button -->
+                                                           <div style="text-align: left;">
+                                                            <asp:Button ID="ReserveButton" runat="server" Text="Reserve" CommandName="ReserveBook" CommandArgument='<%# Eval("Book_id") %>'
+                                                                style="background-color: #e7bc91; border: none; color: black; padding: 5px 10px; width: fit-content; float: left;" />
+                                                    </div>
                                                     </ItemTemplate>
                                                 </asp:TemplateField>
                                             </Columns>

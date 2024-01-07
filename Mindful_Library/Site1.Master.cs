@@ -20,12 +20,14 @@ namespace Mindful_Library
 
                     LinkButton3.Visible = false; //logout
                     LinkButton7.Visible = false; //hello_user
+                    LinkButton5.Visible = false; //Reservation
                 }
                 else if (Session["role"].Equals("user"))
                 {
                     LinkButton1.Visible = false; //login
                     LinkButton2.Visible = false; //signup
 
+                    LinkButton5.Visible = true; //Reservation
                     LinkButton3.Visible = true; //logout
                     LinkButton7.Visible = true; //hello_user
                     LinkButton7.Text = "Hello " + Session["username"].ToString();
@@ -56,6 +58,12 @@ namespace Mindful_Library
             Response.Redirect("Books.aspx");
         }
 
+        //Reservation
+        protected void LinkButton5_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Reservation.aspx");
+        }
+
         //Logout
         protected void LinkButton3_Click1(object sender, EventArgs e)
         {
@@ -67,6 +75,7 @@ namespace Mindful_Library
 
             LinkButton3.Visible = false; //logout
             LinkButton7.Visible = false; //hello_user
+            LinkButton5.Visible= false; //Reservation
 
             Response.Redirect("homepage.aspx");
         }
