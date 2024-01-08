@@ -78,7 +78,7 @@
                                                                             <asp:Label ID="Label10" runat="server" Font-Bold="True" Text='<%# Eval("[Price]") %>'></asp:Label>
                                                                              <br />
                                                                             <span class="title">Availability - </span> 
-                                                                            <asp:Label ID="Label12" runat="server" Font-Bold="True" Text='<%# Eval("[Disponibilty]") %>'></asp:Label>
+                                                                            <asp:Label ID="Label12" runat="server" Font-Bold="True" Text='<%# Eval("[Disponibility]") %>'></asp:Label>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -89,8 +89,8 @@
                                                         </div>
                                                          <!-- Reserve button -->
                                                            <div style="text-align: left;">
-                                                            <asp:Button ID="ReserveButton" runat="server" Text="Reserve" CommandName="ReserveBook" CommandArgument='<%# Eval("Book_id") %>'
-                                                                style="background-color: #e7bc91; border: none; color: black; padding: 5px 10px; width: fit-content; float: left;" />
+                                                            <asp:Button ID="ReserveButton" runat="server" Text="Reserve" CommandName="ReserveLivre" CommandArgument='<%# Eval("Book_Id") %>'
+                                                                style="background-color: #e7bc91; border: none; color: black; padding: 5px 10px; width: fit-content; float: left;" OnCommand="ReserverLivre_Click"  />
                                                     </div>
                                                     </ItemTemplate>
                                                 </asp:TemplateField>
