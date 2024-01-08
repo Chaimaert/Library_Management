@@ -14,50 +14,18 @@ namespace Mindful_Library
         {
 
         }
-        protected void ReserverLivre_Click(object sender, CommandEventArgs e)
+        protected void ReserveButton_Click(object sender, EventArgs e)
         {
-            // Obtenir l'ID du livre à partir du bouton cliqué
-            int Book_Id = Convert.ToInt32(e.CommandArgument);
+            Button btn = (Button)sender;
 
-            // Obtenir les informations du livre réservé à partir de la base de données
-            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["Mindful_libraryConnectionString"].ConnectionString;
-            string selectQuery = "SELECT * FROM Books WHERE Book_Id = @Book_Id";
+            // Get the Book_id from the CommandArgument
+            string bookId = btn.CommandArgument;
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                connection.Open();
-
-                using (SqlCommand command = new SqlCommand(selectQuery, connection))
-                {
-                    command.Parameters.AddWithValue("@Book_Id", Book_Id);
-
-                    using (SqlDataReader reader = command.ExecuteReader())
-                    {
-                        if (reader.Read())
-                        {
-                            // Récupérer les informations du livre réservé
-                            string Book_Name = reader["Book_Name"].ToString();
-                            string Author_Name = reader["Author_Name"].ToString();
-                            string Book_Type = reader["Book_Type"].ToString();
-                            int Pages_Nbr = Convert.ToInt32(reader["Pages_Nbr"]);
-                            decimal Price = Convert.ToDecimal(reader["Price"]);
-                            int Disponibility = Convert.ToInt32(reader["Disponibility"]);
-
-                            // Stocker les informations dans la session pour les transmettre à la page de réservation
-                            Session["Book_Name"] = Book_Name;
-                            Session["Author_Name"] = Author_Name;
-                            Session["Book_Type"] = Book_Type;
-                            Session["Pages_Nbr"] = Pages_Nbr;
-                            Session["Price"] = Price;
-                            Session["Disponibility"] = Disponibility;
-                        }
-                    }
-                }
-            }
-
-            // Rediriger vers la page de réservation
-            Response.Redirect("~/Reservation.aspx");
+            // Redirect to reservation page with the selected book_id in query string
+            Response.Redirect("Reservation.aspx?Book_id=" + bookId);
         }
+
+
     }
 }
 

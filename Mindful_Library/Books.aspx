@@ -87,11 +87,11 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                         <!-- Reserve button -->
-                                                           <div style="text-align: left;">
-                                                            <asp:Button ID="ReserveButton" runat="server" Text="Reserve" CommandName="ReserveLivre" CommandArgument='<%# Eval("Book_Id") %>'
-                                                                style="background-color: #e7bc91; border: none; color: black; padding: 5px 10px; width: fit-content; float: left;" OnCommand="ReserverLivre_Click"  />
-                                                    </div>
+                                                    </ItemTemplate>
+                                                </asp:TemplateField>
+                                                <asp:TemplateField HeaderText="Reserve">
+                                                    <ItemTemplate>
+                                                        <asp:Button ID="ReserveButton" runat="server" CommandName="ReserveBook" CommandArgument='<%# Eval("Book_id") %>' Text="Reserve" CssClass="btn btn-primary" OnClick="ReserveButton_Click" />
                                                     </ItemTemplate>
                                                 </asp:TemplateField>
                                             </Columns>
