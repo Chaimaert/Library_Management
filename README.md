@@ -29,4 +29,3 @@ This section will be accessible to members, offering them the following features
 • Search, filter, sorting, and pagination in lists
 • Asynchronous email sending
 • Log files
-
